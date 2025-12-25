@@ -1,0 +1,16 @@
+# Render Deployment Configuration
+services:
+  - type: web
+    name: careerboost-backend
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: RAZORPAY_KEY_ID
+        value: rzp_test_RvMV8TCAdy3ugd
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: PORT
+        value: 3001
