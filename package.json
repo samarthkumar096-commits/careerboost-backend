@@ -1,0 +1,26 @@
+{
+  "name": "careerboost-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Backend API server for CareerBoost AI with Razorpay payment integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["razorpay", "payment", "api", "backend"],
+  "author": "CareerBoost AI",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "razorpay": "^2.9.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
